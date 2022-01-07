@@ -1,0 +1,58 @@
+body{
+    width: 100%;
+    min-height: 1380px;
+    padding: 0;
+    margin: 0;
+    background: url("../img/index/book.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+}
+.register{
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    background: #0000009f;
+    text-align: center;
+    color: #FFFF;
+    font-family: Microsoft JhengHei;
+    border-radius: 10px;
+    padding: 30px;
+    width: 30%;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="email"]{
+    font-size: 16px;
+    font-family: Microsoft JhengHei;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    width: 270px;
+}
+select{
+    font-size: 16px;
+    font-family: Microsoft JhengHei;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    width: 280px;
+}
+button{
+    border: 0;
+    padding: 6px 12px;
+    margin: 20px auto;
+    font-family:  Microsoft JhengHei;
+    font-size: 16px;
+    background: #FFFF;
+    color: #000;
+}
+button:hover{
+    transform: scale(1.05, 1.05);
+  }
+@media (max-width: 450px){
+    .login{
+        width: 70%;
+    }
+}

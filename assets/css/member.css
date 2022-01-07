@@ -1,0 +1,426 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+body{
+  background-color: #bbb89e;
+}
+/*上欄菜單*/
+.box1{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  opacity: .8;
+}
+.box1-1{
+  padding: 20px 150px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+/*搜尋*/
+.menu01{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+} 
+.searchTerm {
+  width: 100%;
+  border: 3px solid #668869;
+  border-right: none;
+  height: 24px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size: 18px;
+}
+.searchTerm:focus{
+  color: #668869;
+}
+.searchButton {
+  width: 50px;
+  height: 30px;
+  border: 2px solid #668869;
+  background: #668869;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.wrap{
+  width: 12%;
+  position: absolute;
+  top: 48%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+/*類型下拉式選單*/
+.menu02{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+.classdropdown {
+  position: relative;
+  display: inline-block;
+}
+.classdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+.classdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.classdropdown-content a:hover {
+  background-color: #d8d4b5;
+}
+.classdropdown:hover .classdropdown-content {
+  display: block;
+}
+.classdropdown:hover .menu02 {
+  color: #668869;
+}
+/*關於我們*/
+.menu03{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.menu03 a:hover{
+  color: #668869;
+  cursor: pointer;
+}
+/*會員中心下拉式選單*/
+.menu04{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+.memberdropdown {
+  position: relative;
+  display: inline-block;
+}
+.memberdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+.memberdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.memberdropdown-content a:hover {
+  background-color: #d8d4b5;
+}
+.memberdropdown:hover .memberdropdown-content {
+  display: block;
+}
+.memberdropdown:hover .menu04 {
+  color: #668869;
+}
+/*購物車*/
+.menu05{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.menu05 a:hover{
+  color: #668869;
+  cursor: pointer;
+}
+.img1{
+  vertical-align:middle;
+  display: inline;
+  margin-right: 3px;
+}
+/*content*/
+.set {
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+    width: 1000px;
+    height: 800px;
+    background-color:#668869;
+    display: block;
+    padding-top: 10px;
+    border-radius: 15px;
+  }
+  main{
+    width:1000px;
+    margin:45px auto;
+    display:block;
+  }
+  
+  main>ul li{
+    float:left;
+    margin-left: 50px;
+    list-style-type:none;
+  }
+  
+  ul li a{
+    font-family: Microsoft JhengHei;
+    font-size:25px;
+    font-weight:bolder;
+    text-decoration:none;
+    display:block;
+    width:100px;
+    padding:15px 20px;
+    background:#668869;
+    color: #bbb89e;
+  }
+  
+  ul li a:hover{
+    background:#82977f;
+    color:#bbb89e;
+  }
+  
+  ul li a.current{
+    background:#d8d4b5;
+    color:#668869;
+  }
+  
+  #contents{
+      clear:both;
+      margin-bottom:150px;
+  }
+  
+  #contents div{
+      padding:30px 20px;
+      background:#d8d4b5;
+  }
+  
+  #tab1{
+    height: 550px;
+  }
+  #tab2{
+    height: 550px;
+  }
+  #tab3{
+    height: 550px;
+  }
+  #tab4{
+    height: 550px;
+  }
+/*個人資料*/
+box01{
+    width: 85%;
+    height: 490px;
+    display: block;
+    margin: 3% auto;
+    background-color: #ece9cf;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+box02{
+    width: 45%;
+    height: 448px;
+    display: block;
+    padding-top: 5%;
+    padding-left: 6%;
+}
+content01{
+    font-family: Microsoft JhengHei;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+}
+box01 input[type="text"]{
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.67em;
+    margin-inline-start: 60px;
+    line-height: 30px;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 2px 0px;
+    outline: none;
+    color: #000;
+    background: #ece9cf;
+}
+box02 button{
+    width: 120px;
+    height: 30px;
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.4em;
+    margin-inline-start: 200px;
+    line-height: 30px;
+    border: 2px solid #668869;
+    outline: none;
+    background: #668869;
+    color: #ece9cf;
+}
+box02 button:hover{
+    transform: scale(1.05, 1.05);
+}
+/*帳號密碼*/
+box03{
+    width: 43%;
+    height: 448px;
+    display: block;
+    padding-top: 5%;
+    padding-left: 6%;
+}
+box03 button{
+    width: 120px;
+    height: 30px;
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.4em;
+    margin-inline-start: 200px;
+    line-height: 30px;
+    border: 2px solid #668869;
+    outline: none;
+    background: #668869;
+    color: #ece9cf;
+}
+box03 button:hover{
+  transform: scale(1.05, 1.05);
+}
+/*收藏*/
+box04{
+  width: 85%;
+  height: 490px;
+  display: block;
+  margin: 3% auto;
+  border-radius: 10%;
+  border-style: double;
+  border-color: #668869;
+  border-width: 8px;
+}
+table{
+  margin:5px auto;
+}
+#tab2 td{
+  padding:25px 32px ;
+  border-bottom: solid #ffffff;
+  border-width: 2px;
+  text-align: center;
+}
+content02{
+  font-family: Microsoft JhengHei;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 1px 1px 1px gray;
+}
+content03{
+  font-family: Microsoft JhengHei;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+}
+input[type=checkbox]{
+  zoom: 150%;
+}
+img2{
+  vertical-align:middle;
+  display: inline;
+}
+/*訂單紀錄*/
+#tab3 td{
+  padding:25px 12px ;
+  border-bottom: solid #ffffff;
+  border-width: 2px;
+  text-align: center;
+}
+/*評分紀錄*/
+#tab4 td{
+  padding:25px 23px ;
+  border-bottom: solid #ffffff;
+  border-width: 2px;
+  text-align: center;
+}
+star{
+  color: #d1bb72;
+  font-size: 25px;
+}
+/*最下面的欄位*/
+.box8{
+  width: 700px;
+  height: 100px;
+  margin: 0 30%;
+  line-height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.text3{
+  width: 25%;
+  height: 20px;
+  font-size: 20px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  margin: 0 40%;
+  line-height:50px;
+}
+.text5{
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.text4{
+  width: 25%;
+  height: 20px;
+  font-size: 20px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  margin: 0 45%;
+  line-height:5px;
+}
+.bottom{
+  height: 180px; /*設定footer本身高度*/
+  background-color:#668869;
+  position: absolute;
+  width: 100%;
+  margin-top: 150px;
+}
+.line{
+  padding-top: 13px;
+  padding-left: 5px;
+}
+/*回首頁*/
+#arrow1 {
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  height: 85px;
+  width: 85px;
+}
+
+

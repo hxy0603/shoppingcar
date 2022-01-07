@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+/*資訊欄*/
+.container{
+    width: 100%;
+    height: 100px;
+    background-color: #668869;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.box{
+    margin: 2.5% 0 5% 0;
+    width: 200px;
+    height: 30px;
+  }
+  .container-1{
+    width: 200px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
+  .container-1 input#search{
+    width: 200px;
+    height: 30px;
+    background: #FFFFFF;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+.item2,.item3,.item4,.item5{
+    margin:2.5% 0 5% 0 ;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family:Microsoft JhengHei ;
+    color:#FFFFFF;
+    padding:0 auto;
+}
+/*logo*/
+.box11{
+  width: 300px;
+  height:230px;
+  background-color: #DEDEBE;
+  margin: 20% 0 0 48%;
+  position: absolute;
+}
+.box1{
+  width: 400px;
+  height: 300px;
+  background-color: #5d795f;
+  margin: 10% 0 0 20%;
+  position: absolute;
+  z-index: 2;
+}
+.box1:hover{
+  transform: scale(1.1, 1.1);
+}
+.content1{
+font-family:Papyrus;
+color: #FFFFFF;
+font-size: 42px;
+padding: 25% 0 0 20%;
+border-bottom: solid 2px #FFFFFF;
+}
+body{
+    background-color:#FFFFFF;
+}

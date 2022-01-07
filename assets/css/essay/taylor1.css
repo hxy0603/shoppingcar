@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*menu*/
+a{
+    text-decoration: none;
+    color: #000;
+  }
+  .box2{
+    width: 100%;
+    height: 1280px;
+    margin-top: 150px;
+  }
+  /*上欄菜單*/
+  .box1{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+    opacity: .8;
+  }
+  .box1-1{
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  /*搜尋*/
+  .menu01{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+  }
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  } 
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #668869;
+    border-right: none;
+    height: 24px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    font-size: 18px;
+  }
+  .searchTerm:focus{
+    color: #668869;
+  }
+  .searchButton {
+    width: 50px;
+    height: 30px;
+    border: 2px solid #668869;
+    background: #668869;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .wrap{
+    width: 12%;
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+  /*類型下拉式選單*/
+  .menu02{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+  .classdropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .classdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+  }
+  .classdropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .classdropdown-content a:hover {
+    background-color: #d8d4b5;
+  }
+  .classdropdown:hover .classdropdown-content {
+    display: block;
+  }
+  .classdropdown:hover .menu02 {
+    color: #668869;
+  }
+  /*關於我們*/
+  .menu03{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+  }
+  .menu03 a:hover{
+    color: #668869;
+    cursor: pointer;
+  }
+  /*會員中心下拉式選單*/
+  .menu04{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+  }
+  .memberdropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .memberdropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+  }
+  .memberdropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .memberdropdown-content a:hover {
+    background-color: #d8d4b5;
+  }
+  .memberdropdown:hover .memberdropdown-content {
+    display: block;
+  }
+  .memberdropdown:hover .menu04 {
+    color: #668869;
+  }
+  /*購物車*/
+  .menu05{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+  }
+  .menu05 a:hover{
+    color: #668869;
+    cursor: pointer;
+  }
+  .img1{
+    vertical-align:middle;
+    display: inline;
+    margin-right: 3px;
+  }
+  /*menu*/
+  .box1{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #FFFF;
+    z-index: 100;
+  }
+  .box1-1{
+    padding: 20px 150px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+  }
+  .menu01{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+  }
+  .menu02{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+  }
+  .menu03{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+  }
+  .menu04{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+  }
+  .menu05{
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: #000;
+  }
+  .img1{
+    vertical-align:middle;
+    display: inline;
+    margin-right: 3px;
+  }
+  
+/*left*/
+.box01 {
+    width: 80%;
+    height: 730px;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    background-color: #d8d4b5;
+    border-radius: 25px;
+}
+.fade{
+    width: 40%;
+    height: 680px;
+    margin-left: 5%;
+    padding-top: 90px;
+    padding-left: 100px;
+    float: left;
+}
+.fade img{
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+/*right*/
+.box09{
+    width: 40%;
+    height: 600px;
+    padding-top: 45px;
+    margin-right: 35px;
+    float: right;
+}
+.content01 {
+    font-family: Microsoft JhengHei;
+    font-size: 20px;
+    font-weight: bold;
+    color: #5b6b59;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+h2{
+    display: block;
+    font-size: 1.4em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 40px;
+}
+.box02{
+    width: 326px;
+    height: 65px;
+    background-color: #ebe7ca;
+    display: block;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+.content02{
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5b6b59;
+}
+.count {
+    width: 204px;
+    height: 40px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 20px;
+    border: #5b6b59 1.5px solid;
+}
+.but1 {
+    width: 60px;
+    height: 40px;
+    font-size: 25px;
+    border: #5b6b59 1.5px solid;
+    float: left;
+    color: #5b6b59;
+    text-align: center;
+}
+.itemcount {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    border-left: #5b6b59 1.5px solid;
+    border-right: #5b6b59 1.5px solid;
+    float: left;
+}
+h3{
+    display: block;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px gray;
+    margin-top: 25px;
+}
+.content03{
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5b6b59;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding-right: 145px ;
+}
+.img{
+    vertical-align:middle;
+    display: inline;
+    margin-right: -6px;
+    margin-top: 20px;
+}
+.img:hover{
+    transform: scale(1.05, 1.05);
+  }
+.but2{
+  border: none;
+  background-color:#d8d4b5;
+}
+/*產品介紹*/
+.box03 {
+    width: 80%;
+    height: 520px;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    background-color: #668869;
+    border-radius: 25px;
+}
+.content04{
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFF;
+    margin-left: 5%;
+}
+h4{
+    display: block;
+    font-size: 25px;
+    line-height: 50px;
+    padding: 0 30% 0 5%;
+}
+/*評論區*/
+.box4{
+    width: 100%;
+    height: 700px;
+}
+.box04-1{
+    display: flex;
+    justify-content: center;
+}
+table{
+    margin: 0 auto;
+}
+.content05{
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5b6b59;
+    width: 41%;
+}
+.content05 input[type="text"]{
+    display: block;
+    font-size: 1.3em;
+    border: none;
+    border-bottom: 2px solid #5b6b59;
+    padding: 5px 0px;
+    outline: none;
+}
+p{
+    font-size: 1.3em;
+    padding: 5px 0px;
+    outline: none;
+}
+textarea{
+    display: block;
+    font-size: 1.3em;
+    line-height: 30px;
+    border: 2px solid #5b6b59;
+    padding: 2px 0px;
+    outline: none;
+    width: 600px;
+    height: 250px;
+}
+.content05-1{
+    width: 130px;
+    height: 45px;
+    margin-left: 62%;
+    margin-top: 34px;
+    font-size: 1.5em;
+    line-height: 30px;
+    border: 2px solid #5b6b59;
+    outline: none;
+    color: #5b6b59;
+    cursor: pointer;
+}
+.content05-1:hover{
+    transform: scale(1.05, 1.05);
+}
+/*星等*/
+.rating {
+    position: relative;
+    transform: rotateY(180deg);
+    margin-right: 22%;
+    margin-top: 3%;
+    display: flex;
+    padding: 5px;
+  }
+  .rating input {
+    display: none;
+  }
+  .rating label {
+    display: block;
+    cursor: pointer;
+    /* width: 30px; */
+    /* background: rgba(94, 94, 94, 0.829); */
+  }
+  .rating label:before {
+    content: '★';
+    /* position: relative; */
+    display: block;
+    font-size: 30px;
+    color: #cac5c5;
+    margin-right: 5px;
+  }
+  .rating label:after {
+    content: '★';
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    color: #f0cf63;
+    top: 10%;
+    opacity: 0;
+    transition: .3s;
+    text-shadow: 0;
+  }
+  .rating label:hover:after,
+  .rating label:hover~label:after,
+  .rating input:checked~label:after {
+    opacity: 1;
+  }
+/*留言板*/
+.box05{
+    background-color: #ebe7ca;
+    width: 720px;
+    height: 650px;
+    border-radius: 10%;
+}
+.content06{
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    font-weight: bold;
+    color: #5b6b59;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.box08{
+    margin-top: 30px;
+}
+.box08-1{
+    display: flex;
+    justify-content: flex-start;
+}
+.box08 img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+h5{
+    font-size: 1.7em;
+    color: #5b6b59;
+    margin: 10px 25px;
+}
+.star{
+    color: #f0cf63;
+    font-size: 31px;
+    margin: 5px 0;
+}
+.comment{
+    font-size: 1.4em;
+    color: #5b6b59;
+    margin-top: 12px;
+    margin-left: 116px;
+}
+.box08 hr{
+    width: 611px;
+    margin: 0 50px;
+}
+/*最下面的欄位*/
+.box8{
+    width: 700px;
+    height: 100px;
+    margin: 0 30%;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.text1{
+    width: 25%;
+    height: 20px;
+    font-size: 20px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    margin: 0 40%;
+    line-height:50px;
+}
+.text2{
+    width: 100px;
+    height: 20px;
+    font-size: 20px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.text4{
+    width: 25%;
+    height: 20px;
+    font-size: 20px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    margin: 0 45%;
+    line-height:5px;
+}
+.bottom{
+    height: 180px; /*設定footer本身高度*/
+    background-color:#668869;
+    position: absolute;
+    width: 100%;
+    margin-top: 900px;
+}
+.line{
+    padding-top: 13px;
+    padding-left: 5px;
+}
+/*回首頁*/
+#arrow{
+    position: fixed;
+    top: 80%;
+    left: 95%;
+    height: 75px;
+    width: 75px;
+}
+#arrow1{
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    height: 85px;
+    width: 85px;
+}
+
+
+  
+
+
+
+

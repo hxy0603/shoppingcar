@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*menu*/
+a{
+  text-decoration: none;
+  color: #000;
+}
+body{
+  background-color: #bbb89e;
+}
+.box2{
+  width: 100%;
+  height: 1280px;
+  margin-top: 150px;
+}
+/*上欄菜單*/
+.box1{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  opacity: .8;
+}
+.box1-1{
+  padding: 20px 150px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+/*搜尋*/
+.menu01{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+} 
+.searchTerm {
+  width: 100%;
+  border: 3px solid #668869;
+  border-right: none;
+  height: 24px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  font-size: 18px;
+}
+.searchTerm:focus{
+  color: #668869;
+}
+.searchButton {
+  width: 50px;
+  height: 30px;
+  border: 2px solid #668869;
+  background: #668869;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.wrap{
+  width: 12%;
+  position: absolute;
+  top: 48%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+/*類型下拉式選單*/
+.menu02{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+.classdropdown {
+  position: relative;
+  display: inline-block;
+}
+.classdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+.classdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.classdropdown-content a:hover {
+  background-color: #d8d4b5;
+}
+.classdropdown:hover .classdropdown-content {
+  display: block;
+}
+.classdropdown:hover .menu02 {
+  color: #668869;
+}
+/*關於我們*/
+.menu03{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.menu03 a:hover{
+  color: #668869;
+  cursor: pointer;
+}
+/*會員中心下拉式選單*/
+.menu04{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+.memberdropdown {
+  position: relative;
+  display: inline-block;
+}
+.memberdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+}
+.memberdropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.memberdropdown-content a:hover {
+  background-color: #d8d4b5;
+}
+.memberdropdown:hover .memberdropdown-content {
+  display: block;
+}
+.memberdropdown:hover .menu04 {
+  color: #668869;
+}
+/*購物車*/
+.menu05{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+.menu05 a:hover{
+  color: #668869;
+  cursor: pointer;
+}
+.img1{
+  vertical-align:middle;
+  display: inline;
+  margin-right: 3px;
+}
+/*menu*/
+.box1{
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  background-color: #FFFF;
+  z-index: 100;
+}
+.box1-1{
+  padding: 20px 150px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.menu01{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.menu02{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.menu03{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.menu04{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.menu05{
+  font-size: 24px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  color: #000;
+}
+.img1{
+  vertical-align:middle;
+  display: inline;
+  margin-right: 3px;
+}
+/*趙龍*/
+.content{
+    font-family:Microsoft JhengHei;
+    font-size: 40px;
+    color: #668869;
+    margin: 0px 0px 0px 40px;
+}
+.box01{
+  width: 50%;
+  height: 40%;
+  margin-left: 10%;
+  background-color: #ece9cf;
+  border-radius: 25px;
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  z-index: 100;
+}
+.box01 table{
+  margin:15px auto;
+}
+.box01 td{
+  padding-top: 15px;
+  padding-right:250px ;
+  padding-left: 5%;
+}
+.box02{
+  width: 39%;
+  height: 80%;
+  position: absolute;
+  top: 30px;
+  right: 95px;
+  z-index: 100;
+  color:#4b614d;
+  font-family:Microsoft JhengHei;
+  letter-spacing: 2px;
+}
+.animation:hover .box01{
+  display: block;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    padding: 2% 1% 2% ;
+  }
+.flex-container img{
+    max-width: 150%;
+    max-height: 150%;
+}
+jd{
+    margin: auto;
+    color:#4b614d;
+    font-family:Microsoft JhengHei;
+    text-align: center;
+}
+jd:hover{
+    transform: scale(1.05, 1.05);
+  }
+jd4{
+    margin: auto;
+    padding-left: 18%;
+    color:#4b614d;
+    font-family:Microsoft JhengHei;
+    text-align: center;
+}
+jd4:hover{
+    transform: scale(1.05, 1.05);
+  }
+jd5{
+    margin: auto;
+    padding-right: 17%;
+    color:#4b614d;
+    font-family:Microsoft JhengHei;
+    text-align: center;
+}
+jd5:hover{
+    transform: scale(1.05, 1.05);
+  }
+/*龍葵*/
+.box03{
+  width: 50%;
+  height: 45%;
+  margin-left: 10%;
+  background-color: #ece9cf;
+  border-radius: 25px;
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  z-index: 100;
+}
+.box03 table{
+  margin:15px auto;
+}
+.box03 td{
+  padding-top: 2px;
+  padding-right:135px ;
+}
+.animation:hover .box03{
+  display: block;
+}
+sun{
+    margin: auto;
+    color:#4b614d;
+    font-family:Microsoft JhengHei;
+    text-align: center;
+}
+sun:hover{
+    transform: scale(1.05, 1.05);
+  }
+/*最下面的欄位*/
+.box8{
+  width: 700px;
+  height: 100px;
+  margin: 0 30%;
+  line-height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.text1{
+  width: 25%;
+  height: 20px;
+  font-size: 20px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  margin: 0 40%;
+  line-height:50px;
+}
+.text2{
+  width: 100px;
+  height: 20px;
+  font-size: 20px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.text4{
+  width: 25%;
+  height: 20px;
+  font-size: 20px;
+  font-family: Microsoft JhengHei;
+  font-weight: bold;
+  margin: 0 45%;
+  line-height:5px;
+}
+.bottom{
+  height: 180px; /*設定footer本身高度*/
+  background-color:#668869;
+  position: absolute;
+  width: 100%;
+  margin-top: 200px;
+}
+.line{
+  padding-top: 13px;
+  padding-left: 5px;
+}
+/*回首頁*/
+#arrow{
+  position: fixed;
+  top: 80%;
+  left: 95%;
+  height: 75px;
+  width: 75px;
+}
+#arrow1{
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  height: 85px;
+  width: 85px;
+}
