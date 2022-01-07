@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <style>@import "../assets/css/member.css";</style>
+    <script src="../assets/js/jquery-2.1.4.min.js"></script>
+    <script src="../assets/js/member.js"></script>
+</head>
+<body>
+    <div class="box1">
+        <div class="box1-1">
+            <div class="menu01">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            <div class="wrap">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Search...">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="classdropdown">
+                <div class="menu02">類型</div>
+                <div class="classdropdown-content">
+                    <a href="../pages/essay.html">散文</a>
+                    <a href="../pages/graphic.html">圖文</a>
+                    <a href="../pages/self-help.html">心理勵志</a>
+                </div>
+            </div>
+            <div class="menu03"><div class="img1"><img src="../assets/img/index/aboutus.png" width="35px" height="35px"></div><a href="../pages/aboutus.html">關於我們</a></div>
+            <div class="memberdropdown">
+                <div class="menu04">
+                    <div class="img1">
+                        <img src="../assets/img/index/member.png" width="28px" height="28px">
+                    </div>會員中心
+                </div>
+                <div class="memberdropdown-content">
+                    <a href="../pages/login.html">登入</a>
+                    <a href="../pages/register.html">註冊</a>
+                    <a href="../pages/member.html">會員資料</a>
+                </div>
+            </div>
+            <div class="menu05">
+                <div class="img1">
+                    <img src="../assets/img/index/shoppingcart.png" width="28px" height="28px">
+                </div>
+                <a href="../pages/shoppingcarmenu.html">購物車</a>
+            </div>
+        </div>
+    </div>
+    <div class="set">
+        <main>
+            <ul>
+                <li>
+                    <a href="#tab1" class="current">個人資料</a>
+                </li>
+                <li>
+                    <a href="#tab2">收藏</a>
+                </li>
+                <li>
+                    <a href="#tab3">訂單紀錄</a>
+                </li>
+                <li>
+                    <a href="#tab4">評分紀錄</a>
+                </li>
+            </ul>
+            <div id="contents">
+                <div id="tab1">
+                    <box01>
+                        <box02>
+                            <content01>個人資料</content01>
+                            <form action>
+                                <input type="text" placeholder="Name" value="小丸子"><br>
+                                <input type="text" placeholder="Gender/Date" value="女/1958/5/8"><br>
+                                <input type="text" placeholder="Phone" value="0912-345-678"><br>
+                                <input type="text" placeholder="Email" value="momoko@gmail.com"><br>
+                                <input type="text" placeholder="Address"><br>
+                                <button type="submit">Update</button>
+                            </form>
+                        </box02>
+                        <box03>
+                            <content01>帳號密碼</content01>
+                            <form action>
+                                <input type="text" placeholder="Account" value="momoko58"><br>
+                                <input type="text" placeholder="Password" value="********"><br>
+                                <button type="submit">Update</button>
+                            </form>
+                        </box03>
+                    </box01>
+                </div>
+                <div id="tab2" style="display: none;">
+                    <box04>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td><img2><img src="../assets/img/book/favor.png" width="50px" height="50px"></img2></td><td></td>
+                                    <td><content02>商品</content02></td><td></td><td></td>
+                                    <td><content02>單價</content02></td><td></td><td></td><td></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" checked></td><td></td>
+                                    <td><content03>月亮是夜晚<br>唯一的光芒</content03><td></td><td></td>
+                                    <td><content03>NT$360</content03><td></td><td><td></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </box04>
+                </div>
+                <div id="tab3" style="display: none;">
+                    <box04>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td><content02>訂單編號</content02></td>
+                                    <td><content02>訂單日期</content02></td>
+                                    <td><content02>商品</content02></td>
+                                    <td><content02>數量</content02></td>
+                                    <td><content02>合計</content02></td>
+                                    <td><content02>備註</content02></td>
+                                    <td><content02>訂單狀態</content02></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><content03>訂單編號</content03></td>
+                                    <td><content03>2021/10/2</content03></td>
+                                    <td><content03>月亮是夜晚<br>唯一的光芒</content03></td>
+                                    <td><content03>1</content03></td>
+                                    <td><content03>NT$360</content03></td>
+                                    <td><content03>無</content03></td>
+                                    <td><content03>完成</content03></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </box04>
+                </div>
+                <div id="tab4" style="display: none;">
+                    <box04>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td></td><td></td>
+                                    <td><content02>日期</content02></td>
+                                    <td><content02>商品</content02></td>
+                                    <td><content02>評論</content02></td><td></td><td></td>
+                                    <td><content02>星等</content02></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td><td></td>
+                                    <td><content03>2021/10/3</content03></td>
+                                    <td><content03>月亮是夜晚<br>唯一的光芒</content03></td>
+                                    <td><content03>哪次不看爆</content03></td><td></td><td></td>
+                                    <td><star>★★★★★</star></td><td></td>
+                                </tr>
+                            </table>
+                        </form>
+                    </box04>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer class="bottom">
+        <div class="box8">
+            <div class="text5">聯絡我們:</div><a href="../pages/line.html" target="_block"><img class="line" src="../assets/img/index/line.png" width="100%" height="60%"></a><br/>
+        </div>
+        <div class="text4">瀏覽人數:100人</div>
+        <div class="text3">Copyright © Soul Cloister 版權所有</div>
+    </footer>
+    <a href="../index.html"><img  id="arrow1" src="../assets/img/index/home.png"></a>
+</body>
+</html>
